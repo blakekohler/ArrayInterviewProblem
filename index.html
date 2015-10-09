@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<title>
+The Array Problem
+</title>
+<!-- Bootstrap core CSS -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+</head>
+  <body>
+	  <div class="row"></div>
+	  <div class="row"></div>
+	  <div class="row"></div>
+	  <div class="row"></div>
+	  <h1 class="text-center" style="margin-top: 50px;">The Array Problem</h1>
+	  <div class="row">
+	  <div class="col-lg-12 text-center">
+		  <a id="ArrayPrint" class="btn btn-primary" >Print My Array</a>
+		  <a id="ClearArray" class="btn btn-warning" >Clear Array</a>
+    <div class="ArrayHolder"></div>
+	<br>
+	<h5>Given the following array of nested objects:</h5>
+	<div class="col-lg-3"></div>
+		<div class="well col-lg-6" style="margin-top: 10px;">
+		   <code>
+			    var existingArray = [{
+            "content": {
+                "host": {
+                    "name": "Mia"
+                }
+            },
+        }, {
+            "content": {
+                "host": {
+                    "name": "Annie"
+                }
+            },
+        }, {
+            "content": {
+                "host": {
+                    "name": "Mia"
+                }
+            },
+            ,
+            {
+                content: {
+                    host: {
+                        name: "Oscar"
+                    }
+                },
+            },
+            {
+                "content": {
+                    "host": {
+                        "name": "Annie"
+                    }
+                },
+            },
+            {
+                "content": {
+                    "host": {
+                        "name": "Mia"
+                    }
+                },
+            },
+            {
+                "content": {
+                    "host": {
+                        "name": "Annie"
+                    }
+                },
+            }
+        ];
+		   </code>
+	</div>
+	<div class="col-lg-12">
+	<h5>How would I modify the object's name value if they match -- to differentiate them? To produce a new array, such as:</h5>
+	</div>
+	<div class="well col-lg-6 col-lg-offset-3" style="margin-top: 10px;">
+		
+			   <code class="">
+		  var existingArray = [{
+            "content": {
+                "host": {
+                    "name": "Mia"
+                }
+            },
+        }, {
+            "content": {
+                "host": {
+                    "name": "Annie"
+                }
+            },
+        }, {
+            "content": {
+                "host": {
+                    "name": "Mia_2"
+                }
+            },
+            ,
+            {
+                content: {
+                    host: {
+                        name: "Oscar"
+                    }
+                },
+            },
+            {
+                "content": {
+                    "host": {
+                        "name": "Annie_2"
+                    }
+                },
+            },
+            {
+                "content": {
+                    "host": {
+                        "name": "Mia_3"
+                    }
+                },
+            },
+            {
+                "content": {
+                    "host": {
+                        "name": "Annie_3"
+                    }
+                },
+            }
+        ];
+		   </code>
+		</div>
+	</div>
+</div>
+<script>
+$("#ArrayPrint").click(function(){
+	var v;
+	for(v = 0; v < existingArray.length; v++){
+		$(".ArrayHolder").append("<h3>"+ existingArray[v].content.host.name + "</h3>");
+	}
+});
+$("#ClearArray").click(function(){
+	$(".ArrayHolder").html("");
+});
+
+var existingArray = [{
+            "content": {
+                "host": {
+                    "name": "Mia"
+                }
+            },
+        }, {
+            "content": {
+                "host": {
+                    "name": "Annie"
+                }
+            },
+        }, {
+            "content": {
+                "host": {
+                    "name": "Mia"
+                }
+            }
+		},
+                        {
+                content: {
+                    host: {
+                        name: "Oscar"
+                    }
+                },
+            },
+            {
+                "content": {
+                    "host": {
+                        "name": "Annie"
+                    }
+                },
+            },
+            {
+                "content": {
+                    "host": {
+                        "name": "Mia"
+                    }
+                },
+            },
+            {
+                "content": {
+                    "host": {
+                        "name": "Annie"
+                    }
+                },
+            }
+        ];
+
+</script>
+
+</body>
+</html>
