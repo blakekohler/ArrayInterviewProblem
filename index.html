@@ -8,6 +8,8 @@ The Array Problem
 <!-- Bootstrap core CSS -->
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
 </head>
   <body>
 	  <div class="row"></div>
@@ -19,7 +21,9 @@ The Array Problem
 	  <div class="col-lg-12 text-center">
 		  <a id="ArrayPrint" class="btn btn-primary" >Print My Array</a>
 		  <a id="ClearArray" class="btn btn-warning" >Clear Array</a>
+           <a id="turnin" onclick="alert('This feature doesn't work quite yet.);" class="btn btn-default" >Turn in Solution</a>
     <div class="ArrayHolder"></div>
+    
 	<br>
 	<h5>Given the following array of nested objects:</h5>
 	<div class="col-lg-3"></div>
@@ -134,6 +138,14 @@ The Array Problem
 	</div>
 </div>
 <script>
+    
+    $(document).ready(function() {
+  $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+});
+    
+    
 $("#ArrayPrint").click(function(){
 	var v;
 	for(v = 0; v < existingArray.length; v++){
