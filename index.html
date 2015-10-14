@@ -9,7 +9,7 @@ The Array Problem
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
+<script src="ArrayScripts.js"></script>
 </head>
   <body>
 	  <div class="row"></div>
@@ -146,66 +146,9 @@ The Array Problem
 });
     
     
-$("#ArrayPrint").click(function(){
-	var v;
-	for(v = 0; v < existingArray.length; v++){
-		$(".ArrayHolder").append("<h3>"+ existingArray[v].content.host.name + "</h3>");
-	}
-});
-$("#ClearArray").click(function(){
-	$(".ArrayHolder").html("");
-});
-
-var existingArray = [{
-            "content": {
-                "host": {
-                    "name": "Mia"
-                }
-            },
-        }, {
-            "content": {
-                "host": {
-                    "name": "Annie"
-                }
-            },
-        }, {
-            "content": {
-                "host": {
-                    "name": "Mia"
-                }
-            }
-		},
-                        {
-                content: {
-                    host: {
-                        name: "Oscar"
-                    }
-                },
-            },
-            {
-                "content": {
-                    "host": {
-                        "name": "Annie"
-                    }
-                },
-            },
-            {
-                "content": {
-                    "host": {
-                        "name": "Mia"
-                    }
-                },
-            },
-            {
-                "content": {
-                    "host": {
-                        "name": "Annie"
-                    }
-                },
-            }
-        ];
 
 </script>
+
 
 </body>
 </html>
