@@ -1,0 +1,13 @@
+[user]
+	name = bkohlercenteva
+	email = blake.kohler@centeva.com
+[core]
+	autocrlf = True
+	excludesfile = C:\\Users\\blake.kohler\\Documents\\gitignore_global.txt
+	editor = \"C:/Program Files (x86)/GitExtensions/GitExtensions.exe\" fileeditor
+[merge]
+	tool = kdiff3
+[diff]
+	guitool = kdiff3
+[credential]
+	helper = !\"C:\\Program Files (x86)\\GitExtensions\\GitCredentialWinStore\\git-credential-winstore.exe\"
